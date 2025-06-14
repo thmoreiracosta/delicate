@@ -1,13 +1,15 @@
-// src/App.tsx
 import HeroSection from "./components/HeroSection";
+import DestinationsSection from "./components/DestinationsSection";
 import Navbar from "./components/Navbar";
 
-export default function App() {
+function App() {
   return (
-    <div className="relative min-h-screen font-sans">
-      
-      <Navbar />
+    <div className="relative w-full h-screen overflow-hidden font-sans">
       <HeroSection />
+      <Navbar />
+      <DestinationsSection />
     </div>
   );
 }
+
+export default App;
